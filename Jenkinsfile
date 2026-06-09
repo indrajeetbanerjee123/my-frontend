@@ -4,11 +4,11 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                git 'https://github.com/indrajeetbanerjee123/my-frontend.git'
-            }
-        }
-
+    steps {
+        git branch: 'main',
+            url: 'https://github.com/indrajeetbanerjee123/my-frontend.git'
+    }
+}
         stage('Deploy to S3') {
             steps {
                 sh '''
