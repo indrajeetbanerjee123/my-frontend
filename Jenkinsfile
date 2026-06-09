@@ -1,7 +1,6 @@
 pipeline {
 agent any
 
-```
 stages {
 
     stage('Verify Files') {
@@ -30,6 +29,5 @@ post {
         echo 'Pipeline failed'
     }
 }
-```
 
 }
